@@ -1,0 +1,87 @@
+{
+  "$schema": "..\\node_modules/@tauri-apps/cli\\schema.json",
+  "build": {
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
+    "devPath": "http://localhost:3000",
+    "distDir": "../out"
+  },
+  "package": {
+    "productName": "Greys Revision",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "systemTray": {
+      "iconPath": "./icons/icon.png",
+      "iconAsTemplate": true
+    },
+    "allowlist": {
+      "all": true,
+      "globalShortcut": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "bin/license.rtf",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.greys-dev.greys-revision",
+      "longDescription": "A managed system for you to create notes, cards and more while keeping it all neatly sorted and categorized. This aims to be a simple, easy to use, and powerful note taking app though is still heavily in development it is already taking large strides towards its goal.",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "A Revision Assistance App",
+      "targets": "all",
+      "windows": {
+        "webviewFixedRuntimePath": null,
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "Greys Revision Manager",
+        "url": "index.html",
+        "width": 800,
+        "visible": false
+      },
+      {
+        "center": true,
+        "resizable": false,
+        "fileDropEnabled": false,
+        "focus": true,
+        "width": 600,
+        "height": 340,
+        "decorations": false,
+        "url": "splash/splash.html",
+        "label": "splashscreen"
+      }
+    ]
+  }
+}
